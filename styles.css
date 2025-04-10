@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffe6e6, #ffcccc);
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(255, 105, 180, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.translation {
+    font-size: 48px;
+    font-weight: 600;
+    color: #cc0052;
+    margin-bottom: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.language {
+    font-size: 28px;
+    font-family: 'Parisienne', cursive;
+    color: #800040;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.button {
+    background: linear-gradient(145deg, #ff66b2, #ff3385);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Parisienne', cursive;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(145deg, #ff3385, #e60073);
+    transform: scale(1.05);
+}
+
+.quote-box {
+    position: absolute;
+    bottom: 610px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 16px 24px;
+    border-radius: 20px;
+    color: #99004d;
+    font-size: 18px;
+    max-width: 80%;
+    font-family: 'Parisienne', cursive;
+    text-shadow: 1px 1px white;
+    animation: fadeIn 1s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    animation: floatUp linear infinite;
+    fill: pink;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}

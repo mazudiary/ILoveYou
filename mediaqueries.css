@@ -1,0 +1,88 @@
+/* Tablet Devices */
+@media (max-width: 1024px) {
+    .quote-box {
+        font-size: 18px;
+        bottom: 440px;
+    }
+
+    .translation {
+        font-size: 30px;
+    }
+
+    .language {
+        font-size: 22px;
+    }
+
+    .button {
+        font-size: 17px;
+        padding: 10px 22px;
+    }
+}
+
+
+/* Medium Devices (Large Phones) */
+@media (max-width: 768px) {
+    .quote-box {
+        font-size: 17px;
+        bottom: 470px;
+    }
+
+    .translation {
+        font-size: 28px;
+    }
+
+    .language {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+    .quote-box {
+        font-size: 16px;
+        bottom: 570px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .translation {
+        font-size: 24px;
+    }
+
+    .language {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+}
+
+
+/* Extra Small (Tiny Screens) */
+@media (max-width: 360px) {
+    .quote-box {
+        font-size: 15px;
+        bottom: 520px;
+    }
+
+    .translation {
+        font-size: 22px;
+    }
+
+    .language {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
